@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Newcastle_College.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+      <script type = "text/javascript" src="JavaScripts/JavaScript1.js"></script>
+    <title>College Website</title>
+   
+  
+   
+      <link href="~/Styles/SiteN.css" rel="stylesheet" />
+   
+     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+   
+       <style type="text/css">
+                 #Form1
+        {
+            height: 758px;
+            width: 1109px;
+            
+        }
+                   
+                 
+
+           
+
+     
+
+          
+        
+
+           </style>
+        </head>
+
+   
+
+
+<body>
+     
+  
+        
+
+    <form id="Form1" runat="server" >
+         
+    <div class ="page">
+             
+        <div class="Contaner">
+         
+                   <div class="title+Image">
+                     <div style="width: 1087px;margin-left:auto;margin-right:auto;">
+                    <asp:Image ID="Image2" runat="server" Height="107px" ImageUrl="~/IMAGES/building.jpg" Width="1069px"/>
+                </div>
+                                       <h1 align="center" style="width: 1087px;">
+                   COLLEGE WEBSITE</h1>
+
+                 
+                        
+                 </div>
+
+            <div style="width: 1004px">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    BackColor="#00CCFF" BorderStyle="Solid" Font-Bold="True" ForeColor="White">
+                   
+                <Items>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home"> </asp:MenuItem>
+                       
+                    <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/Contact.aspx" >
+                     </asp:MenuItem>
+                   
+                    <asp:MenuItem Text="User Login" Value="Photo Gallery">
+                        <asp:MenuItem Text="Student" Value="Student" 
+                                NavigateUrl="~/Students/Student_Login.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Admin" Value="Administrater" 
+                                NavigateUrl="~/Administrater/Admin_Login.aspx"></asp:MenuItem>
+                        
+
+
+                        </asp:MenuItem>
+                        
+                    </Items>
+
+                     
+
+                    </asp:Menu>
+                
+                
+                   </div >
+                       <marquee height="30px"behavior="scroll" scrollamount="3" onmouseover="this.stop()"onmouseout="this.start()">
+                           College News
+                           
+
+
+                       </marquee>
+
+
+                <div style="width: 199px; float: left;">
+           <div id ="mainNavMenu">
+            <ul>
+                <li><a href="Course_Development.aspx">Development</a></li>
+                  <li><a href="Learning_Chart.aspx">Charts</a></li>
+                  <li><a href="Courses.aspx">Courses</a></li>
+                <li><a href="Council_members.aspx">Members</a></li>
+            </ul>
+
+
+
+        </div>
+           
+        </div>
+            <div class="main" style="float: right;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+</div>
+        </div>
+
+           
+
+             
+   </form> 
+    </body>
+</html>
+
+

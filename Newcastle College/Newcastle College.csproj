@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75DEE10F-10A4-4AC6-B627-6ACF16F7A5D2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Newcastle_College</RootNamespace>
+    <AssemblyName>Newcastle College</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrater\Admin_Main.aspx" />
+    <Content Include="Administrater\Modify_Admin.aspx" />
+    <Content Include="Administrater\Admin_Login.aspx" />
+    <Content Include="Administrater\Student_Fees_Admin.aspx" />
+    <Content Include="Administrater\Student_View_Admin.aspx" />
+    <Content Include="App_Data\College_New.mdf" />
+    <Content Include="App_Data\College_New_log.ldf">
+      <DependentUpon>College_New.mdf</DependentUpon>
+    </Content>
+    <Content Include="Contact.aspx" />
+    <Content Include="Council_members.aspx" />
+    <Content Include="Courses.aspx" />
+    <Content Include="Course_Development.aspx" />
+    <Content Include="IMAGES\Front.jpg" />
+    <Content Include="Home.aspx" />
+    <Content Include="IMAGES\AdminAvatar.png" />
+    <Content Include="IMAGES\Admin_logo.png" />
+    <Content Include="IMAGES\air.jpg" />
+    <Content Include="IMAGES\avatar.jpg" />
+    <Content Include="IMAGES\bg.jpg" />
+    <Content Include="IMAGES\bg2.jpg" />
+    <Content Include="IMAGES\building.jpg" />
+    <Content Include="IMAGES\images.jpg" />
+    <Content Include="IMAGES\Learning_Building.jpg" />
+    <Content Include="IMAGES\logo.jpg" />
+    <Content Include="IMAGES\MenuButton.jpg" />
+    <Content Include="IMAGES\TT.png" />
+    <Content Include="Instruction.aspx" />
+    <Content Include="Learning_Chart.aspx" />
+    <Content Include="Master.Master" />
+    <Content Include="Script\JavaScript1.js" />
+    <Content Include="Students\FeesDetails.aspx" />
+    <Content Include="Students\Student_Details.aspx" />
+    <Content Include="Students\Student_Login.aspx" />
+    <Content Include="Students\Student_Page.aspx" />
+    <Content Include="Administrater\Student_Registration.aspx" />
+    <Content Include="Students\Student_SignUp.aspx" />
+    <None Include="Properties\PublishProfiles\Kashif.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.SmarterAsp.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Styles\SiteN.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrater\Admin_Main.aspx.cs">
+      <DependentUpon>Admin_Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrater\Admin_Main.aspx.designer.cs">
+      <DependentUpon>Admin_Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrater\Modify_Admin.aspx.cs">
+      <DependentUpon>Modify_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrater\Modify_Admin.aspx.designer.cs">
+      <DependentUpon>Modify_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrater\Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrater\Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrater\Student_Fees_Admin.aspx.cs">
+      <DependentUpon>Student_Fees_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrater\Student_Fees_Admin.aspx.designer.cs">
+      <DependentUpon>Student_Fees_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrater\Student_View_Admin.aspx.cs">
+      <DependentUpon>Student_View_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrater\Student_View_Admin.aspx.designer.cs">
+      <DependentUpon>Student_View_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Council_members.aspx.cs">
+      <DependentUpon>Council_members.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Council_members.aspx.designer.cs">
+      <DependentUpon>Council_members.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Course_Development.aspx.cs">
+      <DependentUpon>Course_Development.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course_Development.aspx.designer.cs">
+      <DependentUpon>Course_Development.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instruction.aspx.cs">
+      <DependentUpon>Instruction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instruction.aspx.designer.cs">
+      <DependentUpon>Instruction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Learning_Chart.aspx.cs">
+      <DependentUpon>Learning_Chart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Learning_Chart.aspx.designer.cs">
+      <DependentUpon>Learning_Chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Students\FeesDetails.aspx.cs">
+      <DependentUpon>FeesDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Students\FeesDetails.aspx.designer.cs">
+      <DependentUpon>FeesDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Student_Details.aspx.cs">
+      <DependentUpon>Student_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Students\Student_Details.aspx.designer.cs">
+      <DependentUpon>Student_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Student_Login.aspx.cs">
+      <DependentUpon>Student_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Students\Student_Login.aspx.designer.cs">
+      <DependentUpon>Student_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Student_Page.aspx.cs">
+      <DependentUpon>Student_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Students\Student_Page.aspx.designer.cs">
+      <DependentUpon>Student_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrater\Student_Registration.aspx.cs">
+      <DependentUpon>Student_Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrater\Student_Registration.aspx.designer.cs">
+      <DependentUpon>Student_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Student_SignUp.aspx.cs">
+      <DependentUpon>Student_SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Students\Student_SignUp.aspx.designer.cs">
+      <DependentUpon>Student_SignUp.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Administrater\UpLoads\Facuilty\" />
+    <Folder Include="Administrater\UpLoads\Students\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51517</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51517/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
